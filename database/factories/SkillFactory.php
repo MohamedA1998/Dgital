@@ -17,7 +17,7 @@ class SkillFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'          => fake()->sentence($nbWords = 3, $variableNbWords = true),
+            'name'          => fake()->jobTitle(),
             'progress'      => fake()->numberBetween(70, 100)
         ];
     }

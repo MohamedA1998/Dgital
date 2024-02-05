@@ -56,3 +56,6 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 });
 
 Route::view('login', 'admin.auth.login')->middleware('guest')->name('login');
+
+
+// CV After This Project

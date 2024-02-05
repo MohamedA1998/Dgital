@@ -16,10 +16,13 @@ class ServiceFactory extends Factory
      */
     public function definition(): array
     {
+        $icon = collect(['fa-search', 'fa-laptop-code', 'fa-facebook-f', 'fa-mail-bulk', 'fa-thumbs-up', 'fa-android']);
+
         return [
             'name'  => fake()->name(),
-            'icon'  => 'fa fa-check',
-            'description'   => fake()->text()
+            'icon'  => $icon->random(),
+            'description'   => 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+            stet diam sed stet lorem.'
         ];
     }
 }

@@ -16,10 +16,12 @@ class CounterFactory extends Factory
      */
     public function definition(): array
     {
+        $icon = collect(['fa-certificate', 'fa-users-cog', 'fa-users', 'fa-check']);
+
         return [
             'name'  => fake()->name(),
             'count' => fake()->randomNumber(5, true),
-            'icon'  => 'fa fa-check',
+            'icon'  => $icon->random(),
         ];
     }
 }

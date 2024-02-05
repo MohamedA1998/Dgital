@@ -1,16 +1,16 @@
 <x-master-layout>
     <!-- Feature Start -->
-    @include('front.section.feature')
+    @livewire('front.component.service-component', ['iconHaveBackground' => false])
     <!-- Feature End -->
 
 
     <!-- About Start -->
-    @include('front.section.about')
+    @livewire('front.component.skill-component')
     <!-- About End -->
 
 
     <!-- Facts Start -->
-    @include('front.section.facts')
+    @livewire('front.component.counter-component')
     <!-- Facts End -->
 
 
