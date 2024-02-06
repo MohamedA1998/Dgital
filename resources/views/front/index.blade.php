@@ -40,7 +40,7 @@
 
 
     <!-- Projects Start -->
-    @include('front.section.projects')
+    @livewire('front.component.projects-component')
     <!-- Projects End -->
 
 

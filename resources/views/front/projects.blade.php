@@ -1,5 +1,5 @@
 <x-master-layout>
     <!-- Projects Start -->
-    @include('front.section.projects')
+    @livewire('front.component.projects-component', ['count' => 24])
     <!-- Projects End -->
 </x-master-layout>
